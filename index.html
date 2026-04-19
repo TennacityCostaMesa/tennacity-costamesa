@@ -71,7 +71,7 @@
     .addr-item strong { color: var(--text-light); }
 
     /* PHOTO STRIP */
-    .photo-strip { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4px; height: clamp(260px, 28vw, 480px); }
+    .photo-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; height: clamp(280px, 30vw, 500px); }
     .photo-strip img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.7) brightness(0.85); transition: filter 0.4s; display: block; }
     .photo-strip img:hover { filter: saturate(1) brightness(1); }
 
@@ -191,7 +191,7 @@
       .about-grid, .contact-grid { grid-template-columns:1fr; gap:2.5rem; }
       .about-accent { display:none; }
       .stat-bar { gap:1.8rem; }
-      .photo-strip { grid-template-columns:1fr 1fr; height:260px; }
+      .photo-strip { grid-template-columns:1fr 1fr; height:220px; }
       .address-bar { gap:1rem; padding:0.75rem 1.2rem; }
       footer { flex-direction:column; align-items:flex-start; padding:1.5rem 1.2rem; }
     }
@@ -646,7 +646,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + id).classList.add('active');
